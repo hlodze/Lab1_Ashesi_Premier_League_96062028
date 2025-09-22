@@ -64,6 +64,10 @@ public class PlayerSelection {
             case 10 -> ("Playmaker");
             default -> ("Player position not found");
         };
+        String Eligibility = (age > 18 && age < 35 && new_weight < 90) ? "Eligible" : "Not Eligible";
+        String AttackerStatus = (jerseynumber==7 || jerseynumber==9  || jerseynumber==10||jerseynumber==11 ) ? "Yes" : "NO";
+        String Finaldecision = (age > 18 && age < 35 && new_weight < 90) ? "Eligible" : "Not Eligible";
+
 
         System.out.println("Player: "+ name);
         System.out.println("Age:"+ age+ "(" +category+")");
@@ -71,10 +75,9 @@ public class PlayerSelection {
         System.out.println("Weight: "+ new_weight);
         System.out.println("Jersey: "+ jerseynumber);
         System.out.println("Position: "+ position);
-        System.out.println("Lineup decision: "+ decision);
-        String Eligibility = (age > 18 && age < 35 && new_weight < 90) ? "Eligible" : "Not Eligible";
-        String AttackerStatus = (jerseynumber==7 || jerseynumber==9  || jerseynumber==10||jerseynumber==11 ) ? "Yes" : "NO";
-        String Finaldecision = (age > 18 && age < 35 && new_weight < 90) ? "Eligible" : "Not Eligible";
+        System.out.println("Eligibility: "+ Eligibility);
+        System.out.println("Attacker Jersey: "+ AttackerStatus);
+        System.out.println("Final decision: "+ Finaldecision);
 
         ;}
 }
