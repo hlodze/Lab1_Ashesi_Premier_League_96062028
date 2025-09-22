@@ -73,14 +73,8 @@ public class PlayerSelection {
         System.out.println("Position: "+ position);
         System.out.println("Lineup decision: "+ decision);
         String Eligibility = (age > 18 && age < 35 && new_weight < 90) ? "Eligible" : "Not Eligible";
-        String AttackerStatus = (position.equals("Striker") || position.equals("Playmaker") || position.equals("Midfielder")) ? "Yes" : "NO";
+        String AttackerStatus = (jerseynumber==7 || jerseynumber==9  || jerseynumber==10||jerseynumber==11 ) ? "Yes" : "NO";
         String Finaldecision = (age > 18 && age < 35 && new_weight < 90) ? "Eligible" : "Not Eligible";
 
-//        System.out.println()
-//        System.out.println()
-//        System.out.println()
-//        System.out.println()
-//        System.out.println()
-        ;
-    }
+        ;}
 }
